@@ -8,16 +8,9 @@ PREREQUISITES
 
 INSTALL
 -------
-
-   ```sh
-   $ # Get the gRPC repository
-   $ export REPO_ROOT=grpc # REPO root can be any directory of your choice
-   $ git clone -b RELEASE_TAG_HERE https://github.com/grpc/grpc $REPO_ROOT
-   $ cd $REPO_ROOT
-
-   $ cd examples/node
-   $ npm install
-   ```
+```sh
+$ npm install
+```
 
 TRY IT!
 -------
@@ -25,22 +18,20 @@ TRY IT!
 There are two ways to generate the code needed to work with protocol buffers in Node.js - one approach uses [Protobuf.js](https://github.com/dcodeIO/ProtoBuf.js/) to dynamically generate the code at runtime, the other uses code statically generated using the protocol buffer compiler `protoc`. The examples behave identically, and either server can be used with either client.
 
  - Run the server
-
-   ```sh
-   $ # from this directory
-   $ node ./dynamic_codegen/greeter_server.js &
-   $ # OR
-   $ node ./static_codegen/greeter_server.js &
-   ```
+  ```sh
+  $ # from this directory
+  $ node ./dynamic_codegen/greeter_server.js &
+  $ # OR
+  $ node ./static_codegen/greeter_server.js &
+  ```
 
  - Run the client
-
-   ```sh
-   $ # from this directory
-   $ node ./dynamic_codegen/greeter_client.js
-   $ # OR
-   $ node ./static_codegen/greeter_client.js
-   ```
+  ```sh
+  $ # from this directory
+  $ node ./dynamic_codegen/greeter_client.js
+  $ # OR
+  $ node ./static_codegen/greeter_client.js
+  ```
 
 TUTORIAL
 --------
