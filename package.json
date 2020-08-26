@@ -1,10 +1,14 @@
 {
-  "devDependencies": {
+  "name": "grpc-node",
+  "version": "0.1.0",
+  "dependencies": {
     "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.2",
-    "husky": "latest"
-  },
-  "dependencies": {
-    "commitizen": "^4.2.0"
+    "@grpc/proto-loader": "^0.1.0",
+    "async": "^1.5.2",
+    "google-protobuf": "^3.0.0",
+    "grpc": "^1.11.0",
+    "lodash": "^4.6.1",
+    "minimist": "^1.2.0"
   }
 }
