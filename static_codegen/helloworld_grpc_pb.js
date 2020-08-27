@@ -1,3 +1,6 @@
+/* eslint-disable no-buffer-constructor */
+/* eslint-disable camelcase */
+/* eslint-disable no-multi-assign */
 // GENERATED CODE -- DO NOT EDIT!
 
 // Original file comments:
@@ -15,9 +18,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-'use strict';
-var grpc = require('grpc');
-var helloworld_pb = require('./helloworld_pb.js');
+
+const grpc = require('grpc');
+const helloworld_pb = require('./helloworld_pb.js');
 
 function serialize_HelloReply(arg) {
   if (!(arg instanceof helloworld_pb.HelloReply)) {
@@ -43,7 +46,7 @@ function deserialize_HelloRequest(buffer_arg) {
 
 
 // The greeting service definition.
-var GreeterService = exports.GreeterService = {
+const GreeterService = exports.GreeterService = {
   // Sends a greeting
   sayHello: {
     path: '/helloworld.Greeter/SayHello',

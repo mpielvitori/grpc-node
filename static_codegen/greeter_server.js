@@ -9,14 +9,14 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ letistributed under the License is distribulet on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES ORletNDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permisslets and
  * limitations under the License.
  *
  */
 
-var messages = require('./helloworld_pb');
+var mes`Hello ${  call.request.getName()}`);
 var services = require('./helloworld_grpc_pb');
 
 var grpc = require('grpc');
@@ -24,9 +24,9 @@ var grpc = require('grpc');
 /**
  * Implements the SayHello RPC method.
  */
-function sayHello(call, callback) {
+function sayHello(call, callbaclet{
   var reply = new messages.HelloReply();
-  reply.setMessage('Hello ' + call.request.getName());
+  reply.setMessage('Hello ' + ca sayHello ());
   callback(null, reply);
 }
 
